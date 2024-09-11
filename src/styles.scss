@@ -1,1 +1,173 @@
+.theme-orange .bs-datepicker {
+  background-color: #fff !important;
+  color: #333 !important;
+
+  .bs-datepicker-head {
+    background-color: #ff6700 !important;
+    color: #fff !important;
+  }
+
+  .bs-datepicker-body {
+    .week,
+    .day {
+      color: #333 !important;
+    }
+  }
+
+  .bs-datepicker-footer {
+    background-color: #f8f9fa !important; /* Light background for footer */
+  }
+
+  .day.active,
+  .day.selected {
+    background-color: #ff6700 !important; /* Selected day color */
+    color: #fff !important;
+  }
+
+  .day:hover {
+    background-color: #ff6700 !important; /* Hover color for days */
+    color: #fff;
+  }
+
+  .current-today {
+    background-color: #ff6700 !important; /* Today's date background */
+    color: #fff !important;
+  }
+}
+
+// Poppins Font
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "~ngx-bootstrap/datepicker/bs-datepicker.css";
+
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  font-family: "Poppins", "sans-serif" !important;
+}
+
+.mat-toolbar.mat-primary {
+  background: #ff5700 !important;
+  //color: #ff5700 !important;
+}
+
+.mat-flat-button.mat-primary,
+.mat-raised-button.mat-primary,
+.mat-fab.mat-primary,
+.mat-mini-fab.mat-primary {
+  background-color: #ff5700 !important;
+}
+
+.mat-calendar-body-selected {
+  background-color: #ff5700 !important;
+  color: #fff;
+  border-radius: 3.6px !important;
+}
+
+.mat-datepicker-toggle-active {
+  color: #ff5700 !important;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: #ffffff;
+}
+.custom-form-field.mat-focused .mat-form-field-flex {
+  border-color: #ff5700;
+}
+
+// .mat-datepicker-content {
+//   transform-origin: left top !important;
+//   position: relative !important;
+//   left: -8px !important;
+// }
+
+// .mat-datepicker-content .mat-calendar {
+//   width: 260px !important;
+//   height: 335px !important;
+//   position: relative !important;
+//   left: 0px !important;
+//   box-shadow: 0px 0.9px 7.2px 0px #0000001a;
+//   border: 7.2px;
+// }
+
+//time picker style
+
+.time-wrapper table tr td {
+  padding: 0 !important;
+  .btn.btn-default {
+    border: none !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    color: #fff !important;
+    background-color: #ff6700 !important;
+  }
+
+  input {
+    width: 50px;
+    pointer-events: none;
+  }
+
+  a {
+    span {
+      border-width: 1px 0 0 1px;
+    }
+  }
+}
+
+//  Scroll Style
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+::ng-deep .theme-orange .bs-datepicker {
+  background-color: #fff !important;
+  color: #333 !important;
+}
+
+::ng-deep .theme-orange .bs-datepicker .bs-datepicker-head {
+  background-color: #ff6700 !important;
+  color: #fff !important;
+}
+
+::ng-deep .theme-orange .bs-datepicker .bs-datepicker-body .week,
+::ng-deep .theme-orange .bs-datepicker .bs-datepicker-body .day {
+  color: #333 !important;
+}
+
+::ng-deep .theme-orange .bs-datepicker .bs-datepicker-footer {
+  background-color: #f8f9fa !important; /* Light background for footer */
+}
+
+::ng-deep .theme-orange .bs-datepicker .day.active,
+::ng-deep .theme-orange .bs-datepicker .day.selected {
+  background-color: #ff6700 !important; /* Selected day color */
+  color: #fff !important;
+}
+
+::ng-deep .theme-orange .bs-datepicker .day:hover {
+  background-color: #ff6700 !important; /* Hover color for days */
+  color: #fff !important;
+}
+
+::ng-deep .theme-orange .bs-datepicker .current-today {
+  background-color: #ff6700 !important; /* Today's date background */
+  color: #fff !important;
+}
